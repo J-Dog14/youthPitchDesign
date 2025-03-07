@@ -5,9 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9196270-fdc8-4345-a81e-20507908db0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actionPlus.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Curve_Curve RH 1_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Curve_Curve RH 2_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Curve_Curve RH 3_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Curve_Curve RH 4_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Curve_Curve RH 5_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Curve_Curve RH 6_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Fastball_Fastball RH 1_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keenan Aldridge_Fastball_Fastball RH 2_flexion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/bundle.v5_2_8m1707433289.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/cropped-8ctaneBaseballLogo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/dash_bootstrap_components.v1_7_1m1737026638.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/dash_core_components-shared.v2_12_1m1707433290.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/dash_core_components.v2_12_1m1707433290.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/dash_html_components.v2_0_15m1707433290.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/dash_renderer.v2_14_2m1707433289.dev.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/plotly.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/polyfill@7.v2_14_2m1707433290.12.1.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/prop-types@15.v2_14_2m1707433290.8.1.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/react-dom@16.v2_14_2m1707433290.14.0.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pitch Analysis Dashboard_files/react@16.v2_14_2m1707433290.14.0.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pitch_analysis_v3.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pitch_analysis_v4.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pitch_analysis_v5.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pitch_kinematics.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actionPlus.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/actionPlus.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pitch_analysis.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/pitch_analysis.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/youthPitchDesign.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/youthPitchDesign.ipynb" afterDir="false" />
     </list>
@@ -82,6 +107,9 @@
       <workItem from="1740678245800" duration="7365000" />
       <workItem from="1740753045242" duration="14525000" />
       <workItem from="1741017163517" duration="4992000" />
+      <workItem from="1741034193878" duration="1256000" />
+      <workItem from="1741110068885" duration="15485000" />
+      <workItem from="1741190779720" duration="41943000" />
     </task>
     <servers />
   </component>
