@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+
+  <style>
+    /* Dark Theme Styling - Matches Dash */
+    body {
+      background-color: #121212;
+      color: #e1e1e1;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 2px solid #4887a8;
+    }
+
+    .header-left {
+      max-width: 60%;
+    }
+    .header-right img {
+      max-width: 300px;
+    }
+
+    h1.report-title {
+      margin: 0;
+      font-size: 32px;
+      color: #fff;
+    }
+    .small-info {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #1f1f1f;
+      border: 1px solid #4887a8;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .card-header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    .card-content {
+      font-size: 14px;
+      color: #e1e1e1;
+    }
+
+    /* Flex Grid Layout */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .col-9 { flex: 0 0 75%; max-width: 75%; padding-right: 10px; }
+    .col-3 { flex: 0 0 25%; max-width: 25%; }
+    .col-6 { flex: 0 0 50%; max-width: 50%; padding: 0 10px; box-sizing: border-box; }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    th {
+      background-color: #333333;
+      padding: 6px;
+      text-align: center;
+    }
+    td {
+      background-color: #000;
+      border: 1px solid #444;
+      padding: 6px;
+      text-align: center;
+    }
+
+    /* Stability Score Styling */
+    .big-score {
+      text-align: center;
+      font-size: 60px;
+      color: lime;
+      margin: 0 auto;
+    }
+    .score-label {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    /* Graph Styling */
+    .graph {
+      width: 100%;
+      height: auto;
+      border: 2px solid #4887a8;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .graph-caption {
+      font-size: 18px;
+      margin-top: 8px;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="header-row">
+      <div class="header-left">
+        <h1 class="report-title">Curve Ball Analysis Report</h1>
+        <div class="small-info">
+          Athlete: {{ participant_name }} <br>
+          Date: {{ test_date }}
+        </div>
+      </div>
+      <div class="header-right">
+        {% if logo_base64 %}
+          <img src="{{ logo_base64 }}" alt="Logo" />
+        {% else %}
+          <p>[Logo Placeholder]</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Comparison Table + Stability Score -->
+    <div class="row">
+      <div class="col-9">
+        <div class="card">
+          <div class="card-header">Comparison Table</div>
+          <div class="card-content">
+            {{ table_html | safe }}
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <div class="card-header">Stability Score</div>
+          <p class="score-label">Higher = Better Wrist Stability</p>
+          <div class="big-score">{{ stability_score }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graphs Section -->
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">Ulnar Deviation Time Series</div>
+          <img class="graph" src="{{ graph_ulnar_dev }}" alt="Ulnar Deviation Graph" />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">Acceleration: Transverse & Frontal</div>
+          <img class="graph" src="{{ graph_accel }}" alt="Acceleration Graph" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">Pronation Time Series</div>
+          <img class="graph" src="{{ graph_pronation }}" alt="Pronation Graph" />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">Flexion Time Series</div>
+          <img class="graph" src="{{ graph_flexion }}" alt="Flexion Graph" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
