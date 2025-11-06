@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9196270-fdc8-4345-a81e-20507908db0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/migrate_pitch_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pitch_kinematics.backup_before_migration.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accel.png" beforeDir="false" afterPath="$PROJECT_DIR$/accel.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actionPlus.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/actionPlus.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actionPlus.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/actionPlus.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular_velocity.png" beforeDir="false" afterPath="$PROJECT_DIR$/angular_velocity.png" afterDir="false" />
@@ -16,10 +13,7 @@
       <change beforePath="$PROJECT_DIR$/assets/sag@FP.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sag@FP.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sag@MaxER.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sag@MaxER.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sag@Rel.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sag@Rel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flexion.png" beforeDir="false" afterPath="$PROJECT_DIR$/flexion.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pitch_kinematics.db" beforeDir="false" afterPath="$PROJECT_DIR$/pitch_kinematics.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pronation.png" beforeDir="false" afterPath="$PROJECT_DIR$/pronation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ulnar_dev.png" beforeDir="false" afterPath="$PROJECT_DIR$/ulnar_dev.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/youthPitchDesign.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/youthPitchDesign.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,6 +153,15 @@
       <workItem from="1756914746512" duration="7456000" />
       <workItem from="1757015616612" duration="1247000" />
       <workItem from="1758581094267" duration="792000" />
+      <workItem from="1758652449102" duration="41000" />
+      <workItem from="1758751763730" duration="793000" />
+      <workItem from="1758816985052" duration="55000" />
+      <workItem from="1758911057127" duration="1581000" />
+      <workItem from="1761167093334" duration="306000" />
+      <workItem from="1761168974675" duration="758000" />
+      <workItem from="1761247485989" duration="4671000" />
+      <workItem from="1761318962371" duration="67000" />
+      <workItem from="1761834840362" duration="1267000" />
     </task>
     <servers />
   </component>
