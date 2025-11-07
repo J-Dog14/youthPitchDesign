@@ -1,0 +1,19 @@
+# Core data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database (sqlite3 is built-in, no package needed)
+
+# Visualization and dashboards
+plotly>=5.0.0
+dash>=2.14.0
+dash-bootstrap-components>=1.5.0
+
+# PDF generation
+reportlab>=4.0.0
+
+# C3D file processing
+# ezc3d>=1.4.0
+
+# GUI (tkinter is built-in on most systems, no package needed)
+
