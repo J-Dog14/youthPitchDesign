@@ -234,7 +234,22 @@ def generate_movement_report():
         release_row
     )
     velo_png = "angular_velocity.png"
-    fig_velo.write_image(velo_png)
+    
+    # Try to export image with error handling
+    try:
+        fig_velo.write_image(velo_png)
+    except Exception as e:
+        print(f"Warning: Image export failed: {e}")
+        print("Attempting SVG format as fallback...")
+        try:
+            velo_svg = velo_png.replace('.png', '.svg')
+            fig_velo.write_image(velo_svg, format='svg')
+            velo_png = velo_svg
+            print(f"Successfully exported as SVG: {velo_svg}")
+        except Exception as e2:
+            print(f"Error: Both PNG and SVG export failed. {e2}")
+            print("Skipping velocity graph in PDF...")
+            velo_png = None  # Set to None so we can skip drawing it
 
     # --- (D) CREATE PDF ---
     page_width, page_height = 2000, 3200
@@ -436,15 +451,16 @@ def generate_movement_report():
     graph_side_margin = 10
     graph_img_w = top_text_graph_card_w - (graph_side_margin * 2)
 
-    c.drawImage(
-        velo_png,
-        text_left, 
-        graph_img_y,  
-        width=graph_img_w,
-        height=graph_img_h,
-        preserveAspectRatio=True,
-        mask='auto'
-    )
+    if velo_png: # Only draw image if velo_png is not None
+        c.drawImage(
+            velo_png,
+            text_left, 
+            graph_img_y,  
+            width=graph_img_w,
+            height=graph_img_h,
+            preserveAspectRatio=True,
+            mask='auto'
+        )
 
     # Move the next sections up...
     current_y = top_text_graph_card_y - 30
