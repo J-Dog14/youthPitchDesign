@@ -14,9 +14,9 @@ def compute_score(
     Compute kinematic score based on movement parameters.
     
     Scoring logic:
-      1) arm_velo * 0.005
-      2) torso_velo * 0.02
-      3) abduction@footplant => -1 * (abd_footplant * 2)
+      1) arm_velo * 0.0025
+      2) torso_velo * 0.01
+      3) abduction@footplant => -1 * (abd_footplant * 1.2)
       4) shoulder ER@footplant => piecewise logic
       5) max_er => piecewise logic => +10 if in 180..210, 0 if in 211..220,
          0 if in 179..(just below 180?), and -10 if <180 or >220
@@ -41,13 +41,13 @@ def compute_score(
     score = 0.0
 
     # 1) Arm velocity
-    score += arm_velo * 0.005
+    score += arm_velo * 0.0025
 
     # 2) Torso velocity
-    score += torso_velo * 0.02
+    score += torso_velo * 0.01
 
     # 3) Abduction @ footplant (negative factor)
-    score += -1.0 * (abd_footplant * 2)
+    score += -1.0 * (abd_footplant * 1.2)
 
     # 4) Shoulder ER @ footplant piecewise
     if 35 <= shoulder_fp <= 75:
