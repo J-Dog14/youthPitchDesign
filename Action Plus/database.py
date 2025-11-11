@@ -138,7 +138,9 @@ def archive_movement_data():
         return
     
     # Build INSERT INTO ... SELECT statement
-    columns_str = ", ".join(columns)
+    # Wrap column names in square brackets to handle special characters like @
+    columns_quoted = [f"[{col}]" for col in columns]
+    columns_str = ", ".join(columns_quoted)
     insert_sql = f"""
     INSERT INTO movement_data_archive ({columns_str})
     SELECT {columns_str} FROM movement_data
