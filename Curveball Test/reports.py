@@ -3,6 +3,7 @@ Report generation functions for creating PDF reports with graphs and tables.
 """
 
 import os
+import shutil
 import sqlite3
 import pandas as pd
 import numpy as np
@@ -10,7 +11,7 @@ import plotly.graph_objects as go
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 from reportlab.platypus import Table, TableStyle
-from config import DB_PATH, OUTPUT_DIR, LOGO_PATH
+from config import DB_PATH, OUTPUT_DIR, OUTPUT_DIR_TWO, LOGO_PATH
 
 
 def generate_curve_report():
@@ -318,6 +319,11 @@ def generate_curve_report():
     c.showPage()
     c.save()
     print(f"PDF saved to: {pdf_path}")
+
+    # Copy to secondary output directory
+    for extra_dir in (OUTPUT_DIR_TWO,):
+        os.makedirs(extra_dir, exist_ok=True)
+        shutil.copy2(pdf_path, os.path.join(extra_dir, os.path.basename(pdf_path)))
 
 
 def build_time_series_figure(df_curves, title, prefix, color, df_reference=None, force_axis_start_at_zero=True):
